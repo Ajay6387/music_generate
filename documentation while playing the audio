@@ -1,0 +1,62 @@
+ERROR OCCURED:-
+when i run this code it crete a file but not plaiying 
+
+
+MIDI synthesis not set up:
+A sound font file (.SF2) is required for MIDI synthesis.
+Please install a sound font and configure it from the VLC preferences (Input / Codecs > Audio codecs > FluidSynth).
+
+Codec not supported:
+VLC could not decode the format "MIDI" (MIDI Audio)
+MIDI synthesis not set up:
+A sound font file (.SF2) is required for MIDI synthesis.
+Please install a sound font and configure it from the VLC preferences (Input / Codecs > Audio codecs > FluidSynth).
+
+Codec not supported:
+VLC could not decode the format "MIDI" (MIDI Audio)
+
+##########################################################################################################
+BELOW IS THE STRAIGHT FORWARD SOLUTION
+##########################################################################################################
+The error message you're encountering indicates that VLC Media Player is unable to play the MIDI file due to the absence of a sound font file (.SF2). A sound font file is necessary for MIDI synthesis, as it contains the audio samples needed to render the MIDI data as sound.
+
+Here are the steps to set up MIDI playback in VLC using a sound font file:
+
+### Step 1: Download a Sound Font File
+You need to download a sound font file. One commonly used sound font is "FluidR3 GM.sf2". You can download it from various sources online. Here is a link to download it:
+
+[FluidR3 GM SoundFont](https://schristiancollins.com/generaluser.php)
+
+### Step 2: Configure VLC to Use the Sound Font
+1. **Open VLC Preferences**:
+   - Open VLC Media Player.
+   - Go to `Tools` > `Preferences` or press `Ctrl+P`.
+
+2. **Show All Settings**:
+   - At the bottom left corner of the Preferences window, select `All` under `Show settings`.
+
+3. **Navigate to FluidSynth**:
+   - In the left sidebar, navigate to `Input / Codecs` > `Audio codecs` > `FluidSynth`.
+
+4. **Set the Sound Font File**:
+   - In the FluidSynth settings, there is an option called `SoundFont`. Click `Browse` and select the `.SF2` file you downloaded earlier (e.g., `FluidR3_GM.sf2`).
+
+5. **Save and Restart VLC**:
+   - Save the changes and restart VLC Media Player.
+
+### Step 3: Play the MIDI File
+After setting up the sound font, try playing the MIDI file again in VLC. It should now be able to synthesize and play the MIDI file correctly.
+
+### Additional Option: Using a Different MIDI Player
+If VLC continues to have issues, you can use another MIDI player that has built-in support for sound fonts, such as:
+
+- **Windows Media Player** (on Windows): Often has built-in support for MIDI files.
+- **Timidity++**: A software synthesizer that can play MIDI files using sound fonts.
+- **MuseScore**: A music notation software that can play MIDI files and offers extensive sound font support.
+
+### Summary of Steps
+1. Download a sound font file (e.g., `FluidR3_GM.sf2`).
+2. Configure VLC to use the sound font file via preferences.
+3. Play the MIDI file in VLC or use an alternative MIDI player.
+
+By following these steps, you should be able to hear the generated MIDI file.
